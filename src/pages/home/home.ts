@@ -55,6 +55,6 @@ export class HomePage {
         });
     }
     openActivity() {
-        this.navCtrl.push(ActivityPage);
+        this.navCtrl.push(ActivityPage);  //ลองใสคอมเมน
     }
 }
