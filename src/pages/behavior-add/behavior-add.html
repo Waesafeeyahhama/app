@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>behavior-add</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+        name : {{ student.student_name }} {{ student.student_lname }}
+    </div>
+    <ion-list>
+        <ion-item>
+            <ion-label>behavior_type</ion-label>
+            <ion-select [(ngModel)]="behavior_type">
+                <ion-option *ngFor="let item of behavior_types" [value]="item">
+                    {{ item.behavior_type_name }}</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+    <div>
+        Score: {{ behavior_type.score }}
+    </div>
+    <button ion-button (click)="save()" [disabled]="!behavior_type.behavior_type_id">บันทึก</button>
+    <button ion-button (click)="cancel()">ยกเลิก</button>
+</ion-content>

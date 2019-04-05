@@ -1,0 +1,20 @@
+<!--
+  Generated template for the LateAddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <ion-title>late-add</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+        name : {{ student.student_name }}<br>
+        lname : {{ student.student_lname }}
+    </div>
+    <button ion-button (click)="save()">บันทึก</button>
+    <button ion-button (click)="cancel()">ยกเลิก</button>
+</ion-content>

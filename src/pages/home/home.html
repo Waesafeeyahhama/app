@@ -1,14 +1,40 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            หน้าหลัก
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-col>
+        <div text-start>
+            <div text-center>
+                <ion-img width="60" height="80" src="http://data.bopp-obec.info/emis/pic_school/1094300341.jpg">
+                </ion-img>
+                <h3>ยินดีต้อนรับ</h3>
+                แอพพลิเคชั่นการบันทึกพฤติกรรม
+            </div>
+            <hr>
+        </div>
+        <div text-center>
+            <ion-img width="80" height="80"
+                src="https://st3.depositphotos.com/1006318/17128/v/1600/depositphotos_171287970-stockillustratie-hand-hold-slimme-telefoon-scannen.jpg">
+            </ion-img><br>
+            <button ion-button round outline (click)="scanLate()">สแกนมาสาย</button>
+        </div>
+        <div text-center>
+            <ion-img width="100" height="80"
+                src="https://cdn4.vectorstock.com/i/1000x1000/78/93/hand-hold-smart-phone-scanning-qr-code-icon-vector-18307893.jpg">
+            </ion-img><br>
+            <button ion-button round outline color="danger" (click)="scanBahavior()">สแกนพฤติกรรม</button>
+            <button ion-button round outline color="dark" (click)="link()">ป้อนรหัสนักเรียน</button>
+        </div>
+        <div text-center>
+            <ion-img width="100" height="80"
+                src="https://cdn4.vectorstock.com/i/1000x1000/78/93/hand-hold-smart-phone-scanning-qr-code-icon-vector-18307893.jpg">
+            </ion-img><br>
+            <button ion-button round outline color="secondary" (click)="openActivity()">เข้าร่วมกิจกรรม</button>
+        </div>
+    </ion-col>
 </ion-content>
